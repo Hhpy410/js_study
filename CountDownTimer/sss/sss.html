@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>refresh 금지</div>
+    <script>
+      window.onbeforeunload = function (e) {
+        // console.log("새로고침 금지");
+        return e.preventDefault();
+
+        // console.log("새로고침 금지");
+        // return false;
+      };
+      //   document
+      //     .querySelector("body")
+      //     .addEventListener("beforeunload", beforeunload);
+      function beforeunload() {
+        console.log("123123");
+        alert("123123");
+      }
+    </script>
+  </body>
+</html>

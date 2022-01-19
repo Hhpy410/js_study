@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  position: relative;
+  height: 1800px;
+}
+
+.cont {
+  border: 1px solid black;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.tc_popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  opacity: 0.5;
+  display: none;
+  box-sizing: border-box;
+  z-index: -2;
+}
